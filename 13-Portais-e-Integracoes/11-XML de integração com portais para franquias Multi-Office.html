@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portais-e-Integracoes.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+            <li><a href="1-Portais-Parceiros.html">Portais Parceiros</a></li>
+            <li><a href="2-Configurando-integracao-do-canal-pro.html">Configurando a integração do Canal Pro (Grupo OLX) no iList (7)</a></li>
+            <li><a href="3-Configurando a Integração do Imovelweb e Casa Mineira no iList (7).html">Configurando a Integração do Imovelweb e Casa Mineira no iList (7)</a></li>
+            <li><a href="4-Configurando a Integração do Chaves na Mão no iList (7).html">Configurando a Integração do Chaves na Mão no iList (7)</a></li>
+            <li><a href="5-Configurando a integração do Órulo no iList (7).html">Configurando a integração do Órulo no iList (7)</a></li>
+            <li><a href="6-Configurando a integração do DF Imóveis no iList (7).html">Configurando a integração do DF Imóveis no iList (7)</a></li>
+            <li><a href="7-Configurando a integração do Cliquei Mudei no iList (7).html">Configurando a integração do Cliquei Mudei no iList (7)</a></li>
+            <li><a href="8-Configurando a integração do Dream Casa no iList (7).html">Configurando a integração do Dream Casa no iList (7)</a></li>
+            <li><a href="9-Configurando a integração do Attria no iList (7).html">Configurando a integração do Attria no iList (7)</a></li>
+            <li><a href="10-Configurando a integração do WImoveis no iList (7).html">Configurando a integração do WImoveis no iList (7)</a></li>
+            <li><a href="11-XML de integração com portais para franquias Multi-Office.html">XML de integração com portais para franquias Multi-Office</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                XML de integração com portais para franquias Multi-Office
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Você é Franqueado ou Staff e gerencia diferentes lojas pertencentes a um mesmo grupo societário em uma mesma regional? Caso seja, o iList disponibiliza um recurso simples e prático que irá facilitar a integração com Portais parceiros! Em vez de enviar um XML de cada cada loja para os Portais parceiros, você poderá enviar um único URL de integração com os imóveis de todas as lojas pertencentes a mesma Multi Office. Dessa forma, você economiza tempo ao reunir todas as propriedades em um link só!</p>
+
+            <p>As lojas Multi-office no iList precisam estar inseridas em uma <strong>Macro-office</strong>. Essa configuração é feita pelo time de Suporte da RE/MAX Brasil e só pode ser realizada para lojas de uma mesma regional. A partir dessa configuração, o gerente administrador poderá ter acesso às configurações de todas as lojas de sua Multi Office ao acessar o iList com <strong>Acesso de Agência</strong>. Isso significa que, qualquer usuário e senha de uma das lojas da Multi Office irá conceder acesso às configurações de todas.</p>
+
+            <p>Agora, basta acessar qualquer uma delas com o Login da Agência e acessar as configurações da agência, seguindo os passos a seguir:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/xml-de-integracao-com-portais-para-franquias-multi-office/completo.gif" alt="">
+
+            <ol>
+              <li>Uma vez logado no iList com <strong>Acesso de Agência</strong>, acesse a área de configuração da página de sua Franquia no Portal RE/MAX através do menu <strong>"Administração"</strong> na opção <strong>"Agência..."</strong></li>
+
+              <li>Navegue até a aba "<strong>Exportação para Portais</strong>". Selecione a opção “<strong>Sim</strong>” referente ao Attria para habilitar a integração com o portal. Em seguida, clique no ícone em forma de lupa com o símbolo "<strong>+</strong>”
+                <p><strong style="color: red;">Atenção!</strong>, Antes de enviar a URL, navegue até o cadastro dos imóveis desejados e verifique se a opção para ativar a integração com os portais esta selecionada na aba "Portais". Esta informação precisa estar ativa para que o arquivo XML seja carregado.</p>
+
+              <li>Clique no botão “Copiar a URL”, ao lado da opção "Macro Office Url". Essa URL engloba todos os imóveis de todas as suas unidades que estão ativos para a integração com o Portal.</li>
+            </ol>
+
+            <p>Pronto! Basta enviar essa URL para o Portal desejado, utilizando os contatos disponibilizados e aguardar o horário de carga para validar os anúncios.</p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Assuntos-Financeiros.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+            <li><a href="1-Portais-Parceiros.html">Portais Parceiros</a></li>
+            <li><a href="2-Configurando-integracao-do-canal-pro.html">Configurando a integração do Canal Pro (Grupo OLX) no iList (7)</a></li>
+            <li><a href="3-Configurando a Integração do Imovelweb e Casa Mineira no iList (7).html">Configurando a Integração do Imovelweb e Casa Mineira no iList (7)</a></li>
+            <li><a href="4-Configurando a Integração do Chaves na Mão no iList (7).html">Configurando a Integração do Chaves na Mão no iList (7)</a></li>
+            <li><a href="5-Configurando a integração do Órulo no iList (7).html">Configurando a integração do Órulo no iList (7)</a></li>
+            <li><a href="6-Configurando a integração do DF Imóveis no iList (7).html">Configurando a integração do DF Imóveis no iList (7)</a></li>
+            <li><a href="7-Configurando a integração do Cliquei Mudei no iList (7).html">Configurando a integração do Cliquei Mudei no iList (7)</a></li>
+            <li><a href="8-Configurando a integração do Dream Casa no iList (7).html">Configurando a integração do Dream Casa no iList (7)</a></li>
+            <li><a href="9-Configurando a integração do Attria no iList (7).html">Configurando a integração do Attria no iList (7)</a></li>
+            <li><a href="10-Configurando a integração do WImoveis no iList (7).html">Configurando a integração do WImoveis no iList (7)</a></li>
+            <li><a href="11-XML de integração com portais para franquias Multi-Office.html">XML de integração com portais para franquias Multi-Office</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                FAQ - Integração com Portais
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <h4>Como verificar o report de erros no Canal Pro (Grupo ZAP/OLX)</h4>
+
+            <p>Sabia que você consegue verificar o relatório da carga de imóveis enviada do iList para o Grupo ZAP/OLX?</p>
+
+            <p>Verifique o arquivo em anexo e aprenda como analisar o relatório e quais são os campos exigidos pelo portal para que seus imóveis sejam carregados.</p>
+
+            <a href="../imgs/page-images/13-Portais-e-Integraçoes/FAQ - Integração com Portais/1-Como verificar o report de erros no Grupo OLX_/relatorio_integracoes.pdf">Aqui</a>
+
+            <h4>Encontrei um erro relacionado à Área Útil no relatório de integração do Canal Pro (Grupo ZAP/OLX). O que fazer?</h4>
+
+            <p>Caso tenha consultado o relatório de integração do Canal Pro e tenha percebido que alguns imóveis comerciais não estão sendo publicados por conta do erro “<strong>O campo área útil requer que ao menos um valor seja fornecido</strong>”, basta seguir os passos desse artigo para solucionar o problema:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/encontrei-um-erro-relacionado-a-area-util-no-relatorio-de-integracao-do-grupo-olx-canal-pro-o-que-fazer/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Após clicar no ID do imóvel desejado, navegue até a guia “<strong>Comercial</strong>” e preencha o campo <strong>Área Útil</strong>.</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado e será publicado nos portais selecionados. Recomendamos aguardar um prazo médio de 24h para que as atualizações sejam refletidas no Portal.</p>
+
+            <h4>Como corrigir o erro “constructionStatus” no Canal Pro (Grupo ZAP/OLX)?</h4>
+
+            <p>Caso tenha consultado o relatório de integração do Canal Pro e tenha identificado o erro <strong>"constructionStatus"</strong>, basta seguir os passos desse artigo para solucionar o problema:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-corrigir-o-erro-construction-status-no-grupo-olx-canal-pro/completo1.gif">
+
+            <ol>
+              <li>Uma vez logado no iList com <strong>Acesso de Agência</strong>, acesse a área de configuração da página de sua Franquia no Portal RE/MAX através do menu <strong>"Administração"</strong> na opção <strong>"Agência..."</strong></li>
+
+              <li>Navegue até a aba "<strong>Exportação para Portais</strong>". Selecione a opção “<strong>Sim</strong>” referente ao Attria para habilitar a integração com o portal. Em seguida, clique no ícone em forma de lupa com o símbolo "<strong>+</strong>”
+                <p><strong style="color: red;">Atenção !</strong> Na seção <strong>Membro</strong>, você encontrará o código de sua agência no iList. Este código não deve ser alterado, pois ele será reconhecido pelo portal para que a integração seja realizada com sucesso.</p>
+
+                <li>Você encontrará dois URLs:
+                  <p><strong>Office URL</strong>: este XML contém apenas os imóveis ativos para integração da Loja/Agência que está sendo acessada no momento;</p>
+                  <p><strong>Macro Office URL</strong>: este XML contém os imóveis ativos para integração de todas as lojas relacionadas a uma Multi Office. </p>
+                </li>
+
+                <li>Clique no botão <strong>“Copiar a URL”</strong>, localizado ao lado do campo desejado. </li>
+
+                <li>Acesse sua conta no site próprio do Canal Pro <a href="https://canalpro.grupozap.com/login">https://canalpro.grupozap.com/login</a></li>
+
+                <li>Na tela inicial do Canal Pro de sua agência, clique sobre o ícone com suas iniciais no canto superior direito. Em seguida clique em <strong>“Configurações da conta"</strong>.</li>
+
+                <li>Clique na guia <strong>“Integração de anúncios”</strong>.</li>
+
+                <li>No campo <strong>Selecione o Software</strong>, selecione a opção <strong>“iList”</strong></li>
+
+                <li>No campo <strong>URL de Integração</strong>, insira a URL que copiamos no iList na primeira etapa deste procedimento.</li>
+
+                <li>Clicar em “Adicionar”.</li>
+            </ol>
+
+            <p>Pronto! A configuração do portal Canal Pro foi realizada com sucesso. Agora basta aguardar o horário previsto pelo portal para que os seus imóveis sejam publicados.</p>
+
+            <h4>Como publicar imóveis como Destaque e Super Destaque no Portal Olx (Canal Pro, Zap, Viva Real)?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque e Super Destaque no Grupo Olx (Canal Pro, Zap e Viva Real) basta seguir os passos desse artigo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-e-super-destaque-no-portal-olx-canal-pro-zap-viva-real/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção <strong>“Propriedades”</strong>.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba <strong>“Portais”</strong>. Em seguida, clique no botão <strong>“Option”</strong>, ao lado do link referente ao Grupo OLX.</li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no Grupo Olx como Destaque, Super Destaque, Destaque Especial ou Destaque Premium. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como publicar imóveis como Destaque no portal Imovelweb?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque e Super Destaque nos portais Imovelweb e Casa Mineira, basta seguir os passos desse artigo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-e-super-destaque-nos-portais-imovelweb-e-casa-mineira/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Imovelweb. </li>
+
+              <li>Selecione o tipo de publicação (“<strong>Padrão</strong>”, "<strong>Destacado</strong>” ou “<strong>Super Destacado</strong>") e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no Imovelweb e Casa Mineira como Destaque ou Super Destaque. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como publicar imóveis como Destaque no portal Casa Mineira</h4>
+
+            <p>Para publicar os seus imóveis como Destaque e Super Destaque no portal Casa Mineira, siga os passos descritos abaixo:</p>
+
+            <img src="../imgs/page-images/13-Portais-e-Integraçoes/FAQ - Integração com Portais/5-Como publicar imóveis como Destaque e Super Destaque nos portais Imovelweb e Casa Mineira_/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Imovelweb. </li>
+
+              <li>Selecione o tipo de publicação (“<strong>Padrão</strong>”, "<strong>Destacado</strong>” ou “<strong>Super Destacado</strong>") e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no Casa Mineira como Destaque ou Super Destaque. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como publicar imóveis como Destaque no portal Chaves na Mão?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque no portal Chaves na Mão basta seguir os passos desse artigo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-chaves-na-mao/completo.gif" alt="">
+            
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Chaves na Mão. </li>
+
+              <li>Selecione o tipo de publicação (“<strong>Padrão</strong>” ou "<strong>Destacado</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <h4>Como publicar imóveis como Destaque e Super Destaque no portal Órulo?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium no portal Órulo, siga os passos descritos abaixo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-orulo/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Órulo. </li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no portal Órulo como Destaque, Super Destaque, Destaque Especial ou Destaque Premium. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como publicar imóveis como Destaque no portal DF Imóveis?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium no portal DF Imóveis, siga os passos descritos abaixo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-df-imoveis/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao DF Imóveis. </li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <h4>Como publicar imóveis como Destaque no portal Cliquei Mudei?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium no portal Cliquei Mudei, siga os passos descritos abaixo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-cliquei-mudei/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Cliquei Mudei. </li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <h4>Como publicar imóveis como Destaque no portal Dream Casa?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium no portal Dream Casa, siga os passos descritos abaixo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-dream-casa/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Dream Casa. </li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no portal Órulo como Destaque, Super Destaque, Destaque Especial ou Destaque Premium. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como publicar imóveis como Destaque no portal Attria?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium no portal Attria, siga os passos descritos abaixo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-attria/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao Attria. </li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no portal Attria como Destaque, Super Destaque, Destaque Especial ou Destaque Premium. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como publicar imóveis como Destaque no portal WImoveis?</h4>
+
+            <p>Para publicar os seus imóveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium no portal WImoveis, siga os passos descritos abaixo:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-publicar-imoveis-como-destaque-no-portal-wimoveis/completo.gif" alt="">
+
+            <ol>
+              <li>No menu lateral esquerdo, selecione a opção “<strong>Propriedades</strong>”.</li>
+
+              <li>Selecione o imóvel desejado.</li>
+
+              <li>Clique na aba “<strong>Portais</strong>”. Em seguida, clique no botão “<strong>Option</strong>”, ao lado do link referente ao WImoveis. </li>
+
+              <li>Selecione o tipo de publicação ("<strong>Destacado</strong>”, “<strong>Super Destacado</strong>", “<strong>Destaque Especial</strong>” ou “<strong>Destaque Premium</strong>”) e clique em "<strong>Save</strong>"</li>
+
+              <li>Salve o imóvel.</li>
+            </ol>
+
+            <p>Pronto! Seu imóvel está configurado corretamente para ser publicado no portal WImoveis como Destaque, Super Destaque, Destaque Especial ou Destaque Premium. Aguarde um prazo médio de 24h a 48h para ser atualizado no portal.</p>
+
+            <h4>Como melhorar a pontuação do anúncio no portal Imovel Web?</h4>
+
+            <p>Para melhorar o desempenho e pontuação na qualidade do anúncio do imóvel no portal Imovel Web, separamos alguns itens principais:</p>
+
+            <li>Endereço completo;</li>
+
+            <li>Mais de dez (10) fotos;</li>
+
+            <li>Idade do imóvel;</li>
+
+            <li>Acima de 300 caracteres na descrição;</li>
+
+            <li>Vídeo e tour 360;</li>
+
+            <li>Metragem;</li>
+
+            <li>Preço;</li>
+
+            <li>Valor do condomínio.</li>
+
+            <p>Além dessas informações, as características dos imóveis são essenciais para atrair mais buscas no portal. Por isso, é importante preencher o máximo de informações possíveis no anúncio, principalmente informações de características privativas e de áreas comuns.</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portais-e-integracoes/faq-integracao-com-portais/como-melhorar-a-pontuacao-do-anuncio-no-portal-imovel-web/completo.gif" alt="">
+
+            <p>Um bom anúncio é a porta de entrada para o cliente conhecer o imóvel e possivelmente fechar negócio. Por isso capriche no cadastro do anúncio. Bons negócios!</p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Google-Workspace.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="#">Drives Compartilhados - Google Workspace</a></li>
+              <li><a href="2-Grupos-Google-Workspaec.html">Grupos - Google Workspace</a></li>
+              <li><a href="3-Gestao-de-usuarios-nos-grupos-de-email.html">Gestão de Usuários nos Grupos de E-mail - Google Workspace</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Drives Compartilhados - Google Workspace
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>O uso de Drives Compartilhados no Google Workspace é uma prática eficiente e saudável para gestão de arquivos importantes na loja.</p>
+          
+            <p>Dentre os benefícios desta prática, podemos citar:</p>
+            <ol>
+              <li>Não consome o espaço disponível do usuário
+                Exemplo: João possui 1,87 GB de espaço em seu Drive pessoal, mas, se salvar no Drive compartilhado da unidade, não irá consumir o seu espaço disponível.</li>
+
+              <li>No caso de saída ou ausência de um usuário da unidade, por qualquer motivo, os arquivos continuam disponíveis para o gerente do Drive compartilhado distribuir da maneira desejada. Exemplo: João não trabalha mais na RE/MAX Yellow, contudo, os documentos compartilhados importantes nos quais atuava, continuam disponíveis para seu gestor.</li>
+
+              <li>Possibilidade de determinar quem participa e quais suas permissões de atuação no Drive compartilhado.
+                Exemplo: João pode criar e editar arquivos, mas não pode excluir. Já a secretária Maria, pode criar, editar, mover e excluir arquivos.</li>
+            </ol>
+
+            <p>Vejamos como criar um Drive Compartilhado:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/google/drives-compartilhados-google-workspace/completo.gif" alt="">
+
+            <ol>
+              <li>Acesse o seu Google Drive:</li>
+
+              <li>Selecione a opção Drives Compartilhados e inicie a criação e configuração:</li>
+
+              <li>Escolha um nome para o seu Drive e clique em "Criar"</li>
+
+              <li>Agora, você pode arrastar as pastas e arquivos do seu computador ou criar novas clicando com o botão direito do mouse:</li>
+
+              <li>Adicione os participantes do Drive e defina as permissões para cada um.</li>
+
+              <li>Pronto! Agora você tem um Drive Compartilhado com sua agência e mais segurança na manipulação de arquivos.</li>
+            </ol>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

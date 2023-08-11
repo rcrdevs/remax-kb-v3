@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Manuais-e-Normativas.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Guia-de-comissionamento.html">Guia de Comissionamento</a></li>
+              <li><a href="2-Modelos-de-contrato.html">Modelos de Contrato/Distrato de Associação</a></li>
+              <li><a href="3-Lista-de-fornecedores.html">Lista de Fornecedores</a></li>
+              <li><a href="4-Alteracao-de-nome.html">Alteração de nome de franquia</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                FAQ - Manuais e Normativas
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>O presente guia estabelece as regras de comissionamento, categorias de agências franqueadas, transferências dos associados e reconhecimento da RE/MAX Brasil.</p>
+          
+            <p>Nenhum outro procedimento ou regra criados por Master Franquias Regionais ou unidades franqueadas poderá se sobrepor, contradizer ou alterar o que está aqui estabelecido, sob pena de caracterizar infração contratual grave.</p>
+
+            <p>Este documento foi revisto e atualizado em julho de 2021, revogando qualquer outra publicação anterior sobre os temas aqui descritos.</p>
+
+            <p>Baixe o arquivo em anexo que contém todas as orientações aqui abaixo: [ARQUIVO PDF]</p>
+
+            <ol>
+              <li>Erro “CPF já existe na base”: caso uma mensagem com este erro apareça em sua tela ao tentar criar um novo usuário, abra um novo chamado através do Movidesk. Neste ticket, informe que já conhece o processo, mas que recebeu a mensagem de erro. O analista verificará o cadastro deste usuário e fará a reativação na sua loja, seguindo as normas estabelecidas no Guia de Comissionamento.</li>
+              <li>E-mail inválido: é possível que todas as combinações oferecidas pelo sistema já estejam em uso. Abra um novo chamado através do Movidesk e a Equipe de Suporte poderá ajustar de acordo com a necessidade.</li>
+              <li>Após o cadastro, login nos sistemas não funciona: o novo sistema de cadastro realiza uma sincronização automática com o Gmail, Skymail e iList. Além disso, possibilita o acesso à Universidade RE/MAX, clicando no botão "Entrar com MAX CENTER". É possível que leve alguns minutos para sincronia completa de todos os sistemas. Caso este período ultrapasse as horas, entre em contato com nossa Equipe de Suporte através de um chamado no Movidesk.</li>
+            </ol>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

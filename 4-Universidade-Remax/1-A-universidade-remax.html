@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Universidade-Remax.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="#">A Universidade RE/MAX</a></li>
+              <li><a href="2-Acesso-a-universidade.html">Acesso à Universidade RE/MAX</a></li>
+              <li><a href="3-Redefinicao-de-senha-na-universidade.html">Redefinição de senha na Universidade RE/MAX</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                A Universidade RE/MAX
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p><strong> “Quanto mais você aprende e aplica, mais você ganha”.</strong></p>
+
+            <p>O slogan da Universidade RE/MAX nos ajuda a compreender seu propósito: desenvolver profissionais do mercado imobiliário e difundir a cultura da RE/MAX. Tendo em vista essa missão, os cursos disponibilizados na plataforma reúnem as melhores práticas da RE/MAX, entre formações nacionais e internacionais. O principal objetivo é a aplicação dos ensinamentos - compartilhados de forma presencial ou online - no dia a dia da gestão da franquia ou no atendimento de nossos clientes.</p>
+          
+            <p>Você encontrará cursos com enfoque na carreira e na trilha dos Brokers e dos Corretores Associados, assim como tutoriais de utilização das plataformas parceiras da RE/MAX, como ClickSign, Max Center e iList. Além disso, também é possível localizar na Universidade RE/MAX materiais de apoio, como modelos para Contrato de Associação de Corretores, Staffs e Team Leaders. </p>
+
+            <p><strong class="movisdek-button">Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-iList.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Acesso-ao-ilist.html">Acesso ao iList (7)</a></li>
+              <li><a href="2-Acesso-de-agencia.html">Acesso de Agência no iList (7)</a></li>
+              <li><a href="3-Acesso-de-franqueado.html">Acesso de Franqueado/Broker no iList (7)</a></li>
+              <li><a href="4-Personificando-um-associado.html">Personificando um Associado no iList (7) (Brokers e Staffs)</a></li>
+              <li><a href="5-Conhecendo-a-interface.html">Conhecendo a interface gráfica no iList (7)</a></li>
+              <li><a href="6-Conhecendo-o-dashboard.html">Conhecendo o Dashboard (7)</a></li>
+              <li><a href="7-Configuracao-do-perfil-de-loja.html">Configuração do Perfil de Loja (Brokers e Staffs)</a></li>
+              <li><a href="8-Aprovador-de-transacoes.html">Aprovador de Transações da Loja (Brokers e Staffs)</a></li>
+              <li><a href="9-Aprovador-de-imoveis.html">Aprovador de Imóveis da Loja (Brokers e Staffs)</a></li>
+              <li><a href="10-Cadastro-de-imoveis.html">Cadastro de imóveis</a></li>
+              <li><a href="11-Campos-minimos-para-cadastro.html">Campos mínimos para cadastro de imóvel</a></li>
+              <li><a href="12-Situacao-da-captacao.html">Situação da Captação de um Imóvel</a></li>
+              <li><a href="13-Visualizacoes-do-imovel.html">Visualizações do Imóvel no iList (7)</a></li>
+              <li><a href="14-Cancelando-um-imovel.html">Cancelando um Imóvel no iList (7)</a></li>
+              <li><a href="15-Criando-uma-copia-do-imovel.html">Criando uma cópia do imóvel no iList (7)</a></li>
+              <li><a href="16-Problemas-na-qualidade-das-fotos.html">Problemas na qualidade das fotos do Imóvel no iList (7)</a></li>
+              <li><a href="17-Informando-o-iptu.html">Informando o IPTU no Cadastro dos Imóveis no iList (7)</a></li>
+              <li><a href="18-Como-visualizar-todos-imoveis.html">Como visualizar todos os imóveis no iList (7)</a></li>
+              <li><a href="19-Corretor-representante-e-corretor-secundario.html">Corretor Representante e Corretor Secundário no iList (7)</a></li>
+              <li><a href="20-Transferindo-um-imovel.html">Transferindo um imóvel para outro Agente (Brokers e Staffs)</a></li>
+              <li><a href="21-Compartilhando-um-imovel.html">Compartilhando um imóvel utilizando o seu contato de referência</a></li>
+              <li><a href="22-Ocultando-um-imovel.html">Ocultando um imóvel do iList (7) nos portais Nacional e Global</a></li>
+              <li><a href="23-Busca-global-de-imoveis.html">Busca Global de Imóveis iList(7)</a></li>
+              <li><a href="24-Relatorio-de-feedback.html">Relatório de Feedback ao Proprietário no iList (7)</a></li>
+              <li><a href="25-Relatorio-de-imoveis.html">Relatório de Imóveis no iList (7)</a></li>
+              <li><a href="26-Importacao-de-contatos.html">Importação de contatos externos para o iList (7)</a></li>
+              <li><a href="27-Distribuicao-de-leads.html">Distribuição de Leads (Brokers e Staffs) (7)</a></li>
+              <li><a href="28-Transferencia-de-contato.html">Transferência de contatos para outro Corretor(a) (Brokers e Staffs) (7)</a></li>
+              <li><a href="29-Relatorio-de-leds copy.html">Relatório de Leads no iList</a></li>
+              <li><a href="30-Referenciamentos-e-parcerias.html">Referenciamentos e Parcerias no iList (7)</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Importação de contatos externos para o iList (7)
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>O iList possibilita importar contatos através do preenchimento e envio de uma planilha modelo. Para que o processo seja bem sucedido, é importante seguir os passos exatamente como descritos neste artigo.</p>
+          
+
+            <ol>
+              <li>Primeiramente, é preciso montar a base de dados de clientes. Como uma forma de facilitar este processo, disponibilizamos abaixo uma planilha modelo. Abra <strong><a href="https://docs.google.com/spreadsheets/d/17VFH0T7sK6YO5pxMtcRqOGtUIwCcoPcqwAyxFA6rARc/edit#gid=337476754">este link</a></strong> da Planilha Google em seu navegador:</li>
+  
+              <li>A planilha estará bloqueada para edição e você precisará realizar uma cópia para editar. Para fazer a cópia da planilha, você precisará estar logado em uma conta Google. Clique no menu <strong>“Arquivo”</strong> e, em seguida, clique em <strong>“Fazer uma cópia”</strong>.</li>
+              
+              <li>Caso você deseje gerar um arquivo Excel para salvá-lo em seu computador, clique em <strong>"Exportar para CSV"</strong></li>
+  
+              <li>Uma tela será aberta para que possa renomear a nova planilha. No exemplo abaixo, escolhemos um nome genérico para melhor compreensão.</li>
+  
+              <li>Após realizar a cópia, existem algumas informações a serem observadas em sua planilha. Existem duas guias chamadas <strong>“Dados Contatos”</strong> e <strong>“Baixar”</strong>; iremos alterar apenas os dados da primeira guia. Não altere nenhum dado da segunda guia.</li>
+  
+              <li>Na primeira guia, vamos preencher os dados das colunas <strong>“Nome”</strong>, <strong>“E-mail”</strong> e <strong>“Telefone”</strong>, conforme nossa base de clientes. Caso você tenha alguma planilha de contatos, pode copiar e colar os dados nestas três colunas. A planilha é enviada com um exemplo, pode substituir estes dados.</li>
+  
+              <li>Na planilha, é obrigatório indicar o nome e sobrenome dos clientes. Caso algum cliente esteja com apenas um nome, será necessário preencher um segundo nome para poder realizar a importação. No exemplo abaixo, o cliente José, não seria importado para o sistema.</li>
+  
+              <li>Após preencher os dados dos seus contatos na guia <strong>“Dados Contatos”</strong>, você verá que as informações foram migradas automaticamente para a guia da planilha, intitulada <strong>“Baixar”</strong>. Esta será a base a ser enviada para o iList, com os dados já preenchidos nas colunas corretas.</li>
+  
+              <li>Agora que os dados já estão preenchidos, vamos baixar o arquivo para subir no iList. Para fazer isto, clique no menu <strong>“Arquivo”</strong>, em seguida em <strong>“Fazer download”</strong> e por último <strong>“Valores separados por vírgulas(.csv)”</strong>. Pronto! O arquivo foi baixado em seu computador.</li>
+  
+              <p>Agora vamos para a segunda etapa: subir este arquivo para o iList.</p>
+  
+              <li>Acesse o iList. Caso esteja logado no Perfil de agência, será necessário personificar o agente que será responsável por estes contatos. No menu lateral à esquerda, clique em <strong>“Leads/Contatos”</strong> e, em seguida, em <strong>“Importar Contato”</strong>.</li>
+  
+              <li>Uma nova janela será aberta. Clique em <strong>“Próximo”</strong>.</li>
+  
+              <li>No campo <strong>“Idioma”</strong>, selecione a opção <strong>“English”</strong>. Clique em <strong>“Escolher Arquivo”</strong> para inserir a planilha que baixamos há pouco. Clique em <strong>“Próximo”</strong>.</li>
+  
+              <li>Em seguida, o sistema irá exibir uma lista dos contatos que estavam na planilha e que serão inseridos no iList. Esta etapa é direcionada para a conferência de dados. Em seguida, clique em <strong>“Terminado”</strong></li>
+            </ol>
+  
+            <p>Perceba que um dos contatos - <strong>João Freire</strong> - foi inserido com caracteres diferentes à acentuação padrão PT-BR. Isso fez com que seu nome fosse exibido incorretamente: ao invés de João, foi inserido como JoÃ£o. Isto pode ocorrer com nomes que contenham acentuação Nestes casos, será necessária a correção manual, posterior ao cadastro do cliente.</p>
+  
+            <p>Pronto! Os leads foram importados com sucesso.</p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

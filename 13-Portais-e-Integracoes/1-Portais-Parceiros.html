@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portais-e-Integracoes.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+            <li><a href="1-Portais-Parceiros.html">Portais Parceiros</a></li>
+            <li><a href="2-Configurando-integracao-do-canal-pro.html">Configurando a integração do Canal Pro (Grupo OLX) no iList (7)</a></li>
+            <li><a href="3-Configurando a Integração do Imovelweb e Casa Mineira no iList (7).html">Configurando a Integração do Imovelweb e Casa Mineira no iList (7)</a></li>
+            <li><a href="4-Configurando a Integração do Chaves na Mão no iList (7).html">Configurando a Integração do Chaves na Mão no iList (7)</a></li>
+            <li><a href="5-Configurando a integração do Órulo no iList (7).html">Configurando a integração do Órulo no iList (7)</a></li>
+            <li><a href="6-Configurando a integração do DF Imóveis no iList (7).html">Configurando a integração do DF Imóveis no iList (7)</a></li>
+            <li><a href="7-Configurando a integração do Cliquei Mudei no iList (7).html">Configurando a integração do Cliquei Mudei no iList (7)</a></li>
+            <li><a href="8-Configurando a integração do Dream Casa no iList (7).html">Configurando a integração do Dream Casa no iList (7)</a></li>
+            <li><a href="9-Configurando a integração do Attria no iList (7).html">Configurando a integração do Attria no iList (7)</a></li>
+            <li><a href="10-Configurando a integração do WImoveis no iList (7).html">Configurando a integração do WImoveis no iList (7)</a></li>
+            <li><a href="11-XML de integração com portais para franquias Multi-Office.html">XML de integração com portais para franquias Multi-Office</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Portais Parceiros
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Buscando intensificar a divulgação dos seus imóveis ativos, o iList possibilita a integração com portais parceiros. Dessa forma, configurar esta funcionalidade é de extrema importância, uma vez que seus imóveis terão maior alcance e maior visibilidade. Com isso, você terá um maior número de clientes interessados!</p>
+
+            <p><strong>Portais Parceiros</strong>:</p>
+
+            <p>Canal Pro - Grupo OLX Brasil (Portal ZAP e Viva Real)</p>
+
+            <p>Imovelweb</p>
+
+            <p>Casa Mineira</p>
+
+            <p>Chaves na Mão</p>
+
+            <p>Órulo</p>
+
+            <p>DF Imóveis</p>
+
+            <p>Cliquei Mudei (leads4sales)</p>
+
+            <p>Dream Casa</p>
+
+            <p>WImoveis</p>
+
+            <p>Attria</p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

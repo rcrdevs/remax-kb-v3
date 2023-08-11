@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portal-Remax-BR.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Imoveis-Indisponiveis-no-Portal-Remax.html">Imóveis indisponíveis no Portal RE/MAX</a></li>
+              <li><a href="#">Página das lojas no Portal RE/MAX Brasil</a></li>
+              <li><a href="3-Link-para-area-do-Locador-Locatario-na-Pagina-da-Loja.html">Link para área do Locador/Locatário na Página da Loja</a></li>
+              <li><a href="4-Link-para-Landing-Page.html">Link para Landing Page (LP) na Página da Loja</a></li>
+              <li><a href="5-Criacao-de-um-perfil.html">Criação de um Perfil do Cliente no Portal RE/MAX</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Página das lojas no Portal RE/MAX Brasil
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Com a migração para o iList, não utilizamos mais o formato de site individual das lojas. Os sites individuais das unidades foram migrados para o Portal RE/MAX Brasil (<a href="https://www.remax.com.br/">https://www.remax.com.br/</a>), de forma a centralizar os acessos. Dessa forma, todos os domínios de lojas são agora direcionados para a Página Inicial do portal nacional da RE/MAX Brasil.</p>
+
+            <p>Dentro do Portal RE/MAX, você pode localizar a área individual de cada loja, com informações como imóveis, descrição e corretores.</p>
+      
+            <p>Realizamos Webinários sobre esse assunto, que estão disponíveis na Universidade RE/MAX dentro do curso nomeado "iList 7" como conteúdo extra.</p>
+
+            <p>Para ilustrar a explicação, desenvolvemos um vídeo tutorial que demonstra o processo de criação de usuários no Max Center:</p>
+            <iframe src="https://www.youtube.com/embed/9BQAExKgjAw" frameborder="0"></iframe>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

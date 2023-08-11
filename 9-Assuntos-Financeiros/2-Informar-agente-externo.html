@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Assuntos-Financeiros.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Report-de-vendas.html">Report de Vendas</a></li>
+              <li><a href="#">Informar agente externo na comissão de Venda</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Informar agente externo na comissão de Venda
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Após a venda de um imóvel, devemos realizar o fechamento desta transação e o report da venda deste imóvel no iList. Esta atividade pode ser realizada pelo Corretor Responsável pelo imóvel ou por algum usuário administrativo que esteja configurado como Representante de Transações da sua agência.</p>
+
+            <p>Neste artigo, iremos detalhar o report de uma venda com participação de agente externo na comissão de venda.</p>
+
+            <ol>
+              <li>Você pode iniciar tanto pelo menu "Transações" em "Novo TRR"  inserindo o código do imóvel em questão ou alterando o Imóvel para "Vendido" e iniciando o processo de TRR.</li>
+  
+              <li>Na próxima tela, selecione o que você está reportando a Venda do Imóvel</li>
+  
+              <li>Informe quem captou o imóvel, ou seja, o agente RE/MAX da sua imobiliária e que cadastrou o imóvel:</li>
+  
+              <li>Informe o pagamento combinado, e se já recebeu:</li>
+  
+              <li>No próximo passo, você informará quem de fato vendeu o imóvel. Neste caso, você poderá informar um agente externo:</li>
+  
+              <li>Informe que é um agente "Não RE/MAX" e preencha o nome e um endereço do mesmo. Clique em "Salvar" ao final da página:</li>
+  
+              <li>Clique em "Continue"</li>
+  
+              <li>Na próxima etapa, selecione ou cadastre o comprador do imóvel (informação não obrigatória) e clique em "Continue" </li>
+  
+              <li>Informe qual banco financiou a venda - caso saiba da informação - e clique em "Continue"</li>
+  
+              <li>Revise todas as informações e envie o Report para aprovação.</li>
+            </ol>
+            
+            <p>Como a REMARKT é uma plataforma parceira, a RE/MAX Brasil não tem autonomia para realizar intervenções, configurações e suporte para a ferramenta. Caso você precise de alguma ajuda com a Remarkt, registre um chamado diretamente com seu Suporte, que atua de forma independente.</p>
+            
+            <p>Você pode acessar a base de conhecimento do REMARKT clicando <a href="https://remarkt.zendesk.com/hc/pt-br">aqui</a></p>
+  
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Funcionalidades-MaxCenter.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+                <li><a href="1-Criação-de-usuario.html">Criação de usuário no Max Center</a></li>
+                <li><a href="2-Inativação-de-usuarios-no-Max-Center.html">Inativação de usuários no Max Center</a></li>
+                <li><a href="#">Transferência de usuários</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Transferência de Usuarios
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Conforme explicitado no <a href="../imgs/page-images/1-Funcionalidades-MC/Transferência de Usuários/Guia de Comissionamento.pdf">Guia de Comissionamento</a>, é permitido ao associado ou colaborador RE/MAX, por sua própria vontade, a mudança de agência. Este procedimento é efetivado pela Equipe de Suporte TI após a validação da documentação obrigatória pela equipe de Auditoria/Qualidade da RE/MAX Brasil.</p>
+
+            <p>Para realizar a transferência de associados é necessário seguir as orientações descritas no tópico <strong>“Transferência de Associados e Colaboradores Entre Agências RE/MAX”</strong>, localizado na página 9 do <a href="../imgs/page-images/1-Funcionalidades-MC/Transferência de Usuários/Guia de Comissionamento.pdf">Guia de Comissionamento</a></p>
+            
+            <p>A solicitação de Transferência de Usuários deve ser registrada em um chamado via Movidesk, anexando os documentos obrigatórios: </p>
+
+            <ol>
+              <li><strong>Distrato de Associação de Corretor (Pessoa Física ou Jurídica)</strong>, devidamente preenchido e assinado pelas partes da <strong>Agência RE/MAX de Origem</strong>;</li><br>
+
+              <li><strong>Comprovante de pagamento ou declaração de quitação da taxa de transferência</strong>, caso exista a necessidade, realizado pela <strong>Agência RE/MAX Destino</strong> para a <strong>Agência RE/MAX de Origem</strong>;</li><br>
+            </ol>
+
+            <p>No processo de transferência, os imóveis que estão sob responsabilidade do usuário são transferidos com ele. Dessa forma, pedimos para que <strong>apenas os imóveis que deverão ser transferidos com o usuário</strong> permaneçam sob responsabilidade dele. Os imóveis que <strong>não devem ser transferidos com o usuário</strong> devem ser transferidos para outro Corretor da Franquia de Destino.</p>
+
+            <p>Casos que se enquadram em uma Transferência de Usuários:</p>
+
+            <ol>
+              <li>Associado que está ativo em uma Agência RE/MAX, mas gostaria de ser transferido para outra Agência RE/MAX. Isso também se aplica à Agências pertencentes à mesma Multi Office;
+              </li>
+              <li>Associado que fez parte e foi desligado de uma Agência RE/MAX</li>
+            </ol>
+
+            <p>Para ilustrar a explicação, desenvolvemos um vídeo tutorial que demonstra o processo de criação de usuários no Max Center:</p>
+            <iframe src="https://www.youtube.com/embed/BTc_XFT2tss" frameborder="0" allowfullscreen></iframe>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

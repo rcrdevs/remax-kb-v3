@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Google-Workspace.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Drives-compartilhados.html">Drives Compartilhados - Google Workspace</a></li>
+              <li><a href="#">Grupos - Google Workspace</a></li>
+              <li><a href="3-Gestao-de-usuarios-nos-grupos-de-email.html">Gestão de Usuários nos Grupos de E-mail - Google Workspace</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Grupos - Google Workspace
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>No dia a dia de uma franquia RE/MAX, diversos e-mails são enviados e recebidos. São informações cruciais que, geralmente, precisam ser encaminhadas diversas vezes para que cheguem a todas as pessoas necessárias. De forma a facilitar esse processo de comunicação, o Google Workspace apresenta a opção de grupos. Através dessa funcionalidade, é possível fazer com que diversas contas recebam as mensagens que foram direcionadas para um único endereço eletrônico de e-mail.</p>
+          
+            <p>Cada grupo possui um e-mail que <strong>redireciona</strong> as mensagens recebidas aos participantes deste grupo. É possível incluir quantos participantes forem necessários, desde que sejam e-mails com sufixo @remax.com.br. É importante destacar que o grupo apenas redireciona as mensagens e não é uma conta que pode ser acessada com login e senha.</p>
+
+            <p>Importante destacar que, por regra da RE/MAX, NÃO é possível criar caixa de e-mails comuns com nomes genéricos, apenas grupos.</p>
+  
+            <img src="../imgs/page-images/6-Google/Grupos de E-mail - Google Workspace/grupo.png" alt="">
+  
+            <p>Para entender melhor o que seria um <strong>grupo</strong>, vamos analisar o exemplo a seguir, tendo uma franquia RE/MAX fictícia como protagonista.</p>
+  
+            <p>A RE/MAX YELLOW possui uma equipe de quatro funcionários que lidam com questões relacionadas ao Marketing da franquia. Um grupo com o nome de “Marketing RE/MAX YELLOW” foi criado, tendo como endereço eletrônico o e-mail <strong><a href="marketingyellow@remax.com.br">marketingyellow@remax.com.br</a></strong>. Os quatro funcionários foram inseridos como participantes desse grupo. Quando uma mensagem de e-mail for enviada ao grupo m<strong><a href="marketingyellow@remax.com.br">marketingyellow@remax.com.br</a></strong>, uma cópia desta mensagem será enviada aos quatro contatos participantes. “</p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

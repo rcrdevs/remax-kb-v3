@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portal-Remax-Internacional.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="#">Acesso ao Max Center Global</a></li>
+              <li><a href="2-Redefinição-de-senha.html">Redefinição de senha do Max Center Internacional</a></li>
+              <li><a href="3-Referenciamentos-de-clientes.html">Referenciamento de Clientes para Outros Países</a></li>
+              <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Acesso ao Max Center Global
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Para acessar o Max Center Global, é preciso que o usuário possua um e-mail com sufixo @remax.net. Caso o usuário que deseja acessar o Max Center Global não o possua, o processo de criação pode ser realizado em duas etapas:</p>
+
+            <ol>
+              <li>Através de um <strong>chamado no Movidesk</strong>, nossa plataforma de suporte, o Broker deverá solicitar a criação de um usuário na base de dados da RE/MAX Global. Apenas Corretores Associados com CRECI poderão ser cadastrados.</li>
+
+              <li>Após a criação do usuário, realizada por um analista da Equipe de Suporte, o usuário em questão receberá uma mensagem de boas vindas da RE/MAX Global em seu e-mail <strong>@remax.com.br</strong>, com o título “Welcome to RE/MAX!”. É necessário abrir a mensagem, clicar no botão <strong>"Registration"</strong> e seguir o passo a passo proposto pela plataforma.</li>
+            
+              <img src="../imgs/page-images/3-Portal-Remax-Internacional/1-Acesso-ao-maxcenter-global/print1.png" alt="" class="vertical-img">
+
+              <li>Em seguida, escolha uma das opções oferecidas pela RE/MAX Global para o e-mail @remax.net. Serão sempre oferecidas apenas <strong>três opções</strong>. Atenção: <strong>nunca</strong> altere seu e-mail @remax.com.br nesta tela.</li>
+              
+              <img src="../imgs/page-images/3-Portal-Remax-Internacional/1-Acesso-ao-maxcenter-global/print2.png" alt="" class="vertical-img">
+
+              <li>Como forma de segurança, o Max Center Global solicita que o usuário escolha uma Security Question, uma pergunta de segurança que só você saberá a resposta. Esta pergunta será utilizada caso o usuário perca a senha e precise recuperar. Escolha sua Security Question e registre a resposta.</li>
+
+              <img src="../imgs/page-images/3-Portal-Remax-Internacional/1-Acesso-ao-maxcenter-global/print3.png" alt="" class="vertical-img">
+
+              <li>Para finalizar, defina uma senha segura e salve o cadastro ao clicar em <strong>“Save”</strong></li>
+
+              <img src="../imgs/page-images/3-Portal-Remax-Internacional/1-Acesso-ao-maxcenter-global/print4.png" alt="" class="vertical-img">
+            </ol>
+
+            <p>Agora o usuário já tem acesso ao Max Center Global e seu e-mail @remax.net já está criado.</p>
+
+            <p>Para acessar o Max Center Global, o usuário deve acessar o link <a href="https://www.remax.net/">https://www.remax.com.br/</a> e fazer seu login com as credenciais criadas nos passos anteriores.</p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

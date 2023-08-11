@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Funcionalidades-MaxCenter.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+                <li><a href="1-Criação-de-usuario.html">Criação de usuário no Max Center</a></li>
+                <li><a href="#">Inativação de usuários no Max Center</a></li>
+                <li><a href="3-Transferencia-de-Usuarios.html">Transferência de usuários</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Inativação de Usuários no Max Center
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Para inativar um associado em sua Agência, siga os seguintes passos:</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/funcionalidades-mc/inativacao-de-usuarios/completo.gif" alt="">
+
+            <ol>
+              <li>Acesse o Max Center <strong>com o Perfil de Broker, Franqueado ou Staff.</strong></li><br>
+
+              <li>Uma vez logado com sucesso, você encontrará o Dashboard do Max Center. Localize o card referente ao novo Max Center.</li><br>
+
+              <li>Realize o login novamente com os mesmos dados de acesso utilizados anteriormente.</li><br>
+
+              <li>Utilize as opções de filtro para localizar o usuário desejado. Você poderá pesquisar por nome completo, e-mail, CPF, etc.</li><br>
+
+              <li>Uma vez localizado o usuário a ser inativado, clique em <strong>“Editar”</strong>. Utilize a seta esquerda do seu teclado para mover a tela. </li><br>
+
+              <li>Clique em <strong>“Inativar Usuário”</strong>. Importante confirmar os dados do usuário para evitar inativações indevidas.</li><br>
+            </ol>
+
+            <p>Algumas situações podem ocorrer ao tentar inativar um usuário:</p>
+          
+            <ol>
+              <li>Erro ao inativar usuário: este usuário pode conter imóveis ativos em seu nome no sistema iList. É necessário cancelar ou transferir essas captações para outro Corretor(a) Associado(a) de sua loja.</li>
+              <li>O usuário permanece com o status "Novo" no Max Center: como levam alguns minutos para que todos os acessos sejam inativados, recomendamos atualizar a página para verificar se a situação é normalizada. Caso este período ultrapasse as horas, entre em contato com nossa Equipe de Suporte através de um chamado no Movidesk.</li>
+            </ol>
+
+            <p>Para ilustrar a explicação, desenvolvemos um vídeo tutorial que demonstra o processo de inativação de usuários no Max Center:</p>
+            <iframe src="https://www.youtube.com/embed/BTc_XFT2tss" frameborder="0" allowfullscreen></iframe>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

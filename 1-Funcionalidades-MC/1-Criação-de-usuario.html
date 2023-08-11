@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Funcionalidades-MaxCenter.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2 id="related-articles-title">Artigos relacionados</h2>
+            <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+            <ul id="related-articles-list">
+                <li><a href="#">Criação de usuário no Max Center</a></li>
+                <li><a href="2-Inativação-de-usuarios-no-Max-Center.html">Inativação de usuários no Max Center</a></li>
+                <li><a href="3-Transferencia-de-Usuarios.html">Transferência de usuários</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Criação de Usuários no Max Center
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Para cadastrar um novo associado em sua Agência, siga os seguintes passos:</p>
+            
+            <img src="https://remax-faq.s3.amazonaws.com/funcionalidades-mc/criacao-de-usuarios/completo.gif" alt="">
+
+            <ol>
+              <li>Acesse o Max Center <strong>com o Perfil de Broker, Franqueado ou Staff.</strong></li><br>
+              
+              <li>Uma vez logado com sucesso, você encontrará o Dashboard do Max Center. Localize o card referente ao novo Max Center.</li><br>
+
+              <li>Realize o login novamente com os mesmos dados de acesso utilizados anteriormente.</li><br>
+
+              <li>Clique em <strong>“Novo Usuário”</strong>. Leia as recomendações atentamente e selecione a caixa ao lado de <strong>“Declaro que li as recomendações e estou ciente das implicações”</strong>. Em seguida, clique em <strong>“Cadastrar usuário"</strong></li><br>
+
+              <li>Primeiramente, informe o CPF do usuário que será cadastrado, uma vez que o Max Center realiza uma validação do dado informado na base de dados da Receita Federal. Alguns dados cadastrais serão informados automaticamente após análise do CPF.</li><br>
+
+              <li>Selecione uma das opções de e-mail oferecidas pelo sistema. O sistema irá lhe informar caso este e-mail seja válido ou não.</li><br>
+
+              <li>Preencha os outros dados obrigatórios, sinalizado com um asterisco em vermelho (*).</li><br>
+
+              <li>Em relação à senha do usuário, recomendamos a padrão: <strong>br6403M@X</strong></li><br>
+
+              <li>Clique em <strong>Salvar</strong>.</li>
+            </ol>
+
+            <p>Importante lembrar que este cadastro irá gerar automaticamente acesso nas seguintes plataformas: Max Center, CRM iList, e-mail (Google ou Skymail, a depender do plano adotado pela Franquia) e Universidade RE/MAX.</p>
+
+            <p>Para ilustrar a explicação, desenvolvemos um vídeo tutorial que demonstra o processo de criação de usuários no Max Center:</p>
+            <iframe src="https://www.youtube.com/embed/9BQAExKgjAw" frameborder="0" allowfullscreen></iframe>
+          
+            <p>Algumas situações podem ocorrer, impedindo a criação de um novo usuário:</p>
+            <ol>
+              <li>Erro <strong>“CPF já existe na base”</strong>: caso uma mensagem com este erro apareça em sua tela ao tentar criar um novo usuário, abra um novo chamado através do Movidesk. Neste ticket, informe que já conhece o processo, mas que recebeu a mensagem de erro. O analista verificará o cadastro deste usuário e fará a reativação na sua loja, seguindo as normas estabelecidas no Guia de Comissionamento.</li><br>
+              
+              <li><strong>E-mail inválido</strong>: é possível que todas as combinações oferecidas pelo sistema já estejam em uso. Abra um novo chamado através do Movidesk e a Equipe de Suporte poderá ajustar de acordo com a necessidade.</li><br>
+
+              <li><strong>Após o cadastro, login nos sistemas não funciona</strong>: o novo sistema de cadastro realiza uma sincronização automática com o Gmail, Skymail e iList. Além disso, possibilita o acesso à Universidade RE/MAX, clicando no botão <strong>"Entrar com MAX CENTER"</strong>. É possível que leve alguns minutos para sincronia completa de todos os sistemas. Caso este período ultrapasse as horas, entre em contato com nossa Equipe de Suporte através de um chamado no Movidesk.</li><br>
+            </ol>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

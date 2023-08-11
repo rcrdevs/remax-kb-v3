@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portal-Remax-Internacional.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Acesso-ao-maxcenter-global.html">Acesso ao Max Center Global</a></li>
+              <li><a href="2-Redefinição-de-senha.html">Redefinição de senha do Max Center Internacional</a></li>
+              <li><a href="#">Referenciamento de Clientes para Outros Países</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Referenciamento de Clientes para Outros Países
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p><span style="font-weight: 400;">Um dos maiores benef&iacute;cios de trabalhar em uma rede global est&aacute; na possibilidade de compartilhar neg&oacute;cios com qualquer pa&iacute;s do mundo onde exista uma ag&ecirc;ncia RE/MAX.</span></p>
+            <p><span style="font-weight: 400;">Caso um cliente entre em contato contigo voc&ecirc; poder&aacute; referenci&aacute;-lo a um agente de outro pa&iacute;s. Quer saber como? Siga o passo a passo!</span></p>
+            <ol>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Acesse o Max Center Internacional, inserindo seu login e senha. Voc&ecirc; poder&aacute; encontrar um card na sua Dashboard do Max Center Brasil que ir&aacute; te redirecionar para o Max Center Internacional ou pode acessar o site diretamente atrav&eacute;s do link </span><a href="https://www.remax.net/home"><span style="font-weight: 400;">https://www.remax.net/home</span></a><span style="font-weight: 400;">&nbsp;</span></li>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">No menu principal, localizado na parte esquerda do site, selecione a op&ccedil;&atilde;o &ldquo;Find &amp; Refer&rdquo; (Encontrar e Referenciar, traduzido de forma literal).</span></li>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">O menu ir&aacute; se expandir e voc&ecirc; poder&aacute; escolher entre tr&ecirc;s op&ccedil;&otilde;es:</span></li>
+            <ol>
+            <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">&ldquo;Find/Refer an Agent&rdquo;, para encontrar perfis de agentes RE/MAX;</span></li>
+            <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">&ldquo;Received Referrals&rdquo;, para localizar os referenciamentos recebidos;</span></li>
+            <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">&ldquo;Find an Office&rdquo;, para encontrar escrit&oacute;rios RE/MAX.</span></li>
+            </ol>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Um formul&aacute;rio aparecer&aacute;. Preencha os campos com informa&ccedil;&otilde;es exigidas, como cidade e o tipo de im&oacute;vel buscado, por exemplo. Ao preench&ecirc;-lo, clique em &ldquo;</span><strong>Search</strong><span style="font-weight: 400;">&rdquo;.</span></li>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Voc&ecirc; poder&aacute; filtrar sua busca, verificando quais se encaixam no tipo de trabalho que voc&ecirc; deseja realizar. Dessa forma, poder&aacute; entrar em contato com o agente ou escrit&oacute;rio que melhor se enquadra no seu caso, atrav&eacute;s do e-mail informado em seu perfil.&nbsp;</span></li>
+            </ol>
+  
+            <img src="https://remax-faq.s3.amazonaws.com/portal-remax-internacional/referenciamento-de-clientes-para-outros-paises/completo.gif" alt="">
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

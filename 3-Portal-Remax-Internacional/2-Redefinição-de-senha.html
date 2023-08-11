@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portal-Remax-Internacional.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Acesso-ao-maxcenter-global.html">Acesso ao Max Center Global</a></li>
+              <li><a href="#">Redefinição de senha do Max Center Internacional</a></li>
+              <li><a href="3-Referenciamentos-de-clientes.html">Referenciamento de Clientes para Outros Países</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Redefinição de senha do Max Center Internacional
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p><span style="font-weight: 400;">Para redefinir a senha do Max Center Internacional, siga os seguintes passos:</span></p>
+            <p>&nbsp;</p>
+
+            <img src="https://remax-faq.s3.amazonaws.com/portal-remax-internacional/redefinicao-de-senha-do-maxcenter-internacional/completo.gif" alt="">
+  
+            <ol>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Na tela de login, clique em "</span><strong>Forgot Username or Password?</strong><span style="font-weight: 400;">":</span></li>
+            </ol>
+  
+            <p>&nbsp;</p>
+            <ol>
+            <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Digite seu e-mail RE/MAX Internacional e clique em "</span><strong>Send</strong><span style="font-weight: 400;">".</span></li>
+            </ol>
+  
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">Ap&oacute;s isso ser&aacute; enviado para o seu e-mail remax.com.br um link para redefinir a senha do seu MaxCenter Internacional.</span></p>
+            <p>&nbsp;</p>
+            <p><span style="font-weight: 400;">ATEN&Ccedil;&Atilde;O: O e-mail RE/MAX Internacional (remax.net) possui um padr&atilde;o diferente do e-mail RE/MAX Brasil. Caso tenha d&uacute;vidas, consulte o nosso suporte.&nbsp;</span></p>
+            <p>&nbsp;</p>
+  
+            <p><span style="font-weight: 400;">ATEN&Ccedil;&Atilde;O: Voc&ecirc; n&atilde;o pode usar &ldquo;RE/MAX&rdquo; ou seu pr&oacute;prio nome de qualquer forma em sua senha ou isso n&atilde;o permitir&aacute; que voc&ecirc; fa&ccedil;a login e pode ter sua conta bloqueada.</span></p>
+            <p>&nbsp;</p>
+  
+            <p><span style="font-weight: 400;">Caso n&atilde;o tenha conseguido, veja um v&iacute;deo mostrando como fazer!</span></p>
+            <iframe src="https://www.loom.com/embed/7a0ced4ac11a47aeaffada86604cf829?source=embed_watch_on_loom_cta" frameborder="0"></iframe>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

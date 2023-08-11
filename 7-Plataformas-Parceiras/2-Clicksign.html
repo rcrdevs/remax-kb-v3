@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Plataformas-Parceiras.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Banib.html">Banib</a></li>
+              <li><a href="#">Clicksign</a></li>
+              <li><a href="3-Remarkt.html">Remarkt</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Clicksign
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>O ClickSign é uma plataforma destinada à assinatura eletrônica de contratos com reconhecimento jurídico. Buscando facilitar o dia-a-dia das Franquias, o ClickSign possibilita o envio de contratos e coleta de assinaturas de forma remota, seja para clientes ou corretores associados.</p>
+          
+            <p>Uma das parcerias homologadas da RE/MAX, esta plataforma é disponibilizada de forma gratuita para as Franquias com o CNPJ ativo!
+              O card do ClickSign só aparecerá no Max Center Legado de Brokers e Staffs. Para evitar erros e cobranças indevidas pelo uso desta plataforma, os corretores associados só poderão realizar seus respectivos cadastros através de um link direto, enviado por Brokers ou Staff.</p>
+
+            <p>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</p><br>
+
+            <h4>Contato - Clicksign</h4>
+
+            <p>Como o Clicksign é uma plataforma parceira, a RE/MAX Brasil não tem autonomia para realizar intervenções, configurações e suporte para a ferramenta. Caso você precise de alguma ajuda com o Clicksign, registre um chamado diretamente com seu Suporte, que atua de forma independente. </p>
+
+            <p><strong>E-mail</strong>: <a href="ajuda@clicksign.com">ajuda@clicksign.com</a></p>
+            <p><strong>Telefone</strong>: (11) 3145-2570</p>
+            <p><strong>Chat disponível na própria plataforma.</strong></p>
+
+            <h4>Personalização do logotipo - Clicksign</h4>
+          
+            <p>Você gostaria que o logotipo de sua Franquia RE/MAX fosse adicionado ao seu perfil no Clicksign? Dessa forma, seu logotipo será anexado sempre que você enviar um e-mail com novos documentos para coletar a assinatura de seus clientes!</p>
+
+            <p>Para adicionar seu logotipo ao Clicksign, siga os passos descritos abaixo:</p>
+
+            <ol>
+              <li>Clique em <strong>"Configuração"</strong> na tela inicial do Clicksign. </li>
+
+              <li>Em seguida, clique em <strong>"Personalizar"</strong>.</li>
+
+              <li>Por fim, clique em <strong>"Escolher Arquivo"</strong> e selecione o arquivo que contém o logotipo em seu computador.</li>
+
+              <li>Clique em <strong>“Salvar”</strong>. Atenção às especificações de qualidade da imagem!</li>
+            </ol>
+
+            <p>Para ilustrar a explicação dada acima, desenvolvemos um vídeo tutorial que demonstra o processo de personalização do logotipo do Clicksign:</p>
+            <iframe src="https://www.loom.com/embed/6663de42028b461ab198eb5c5344e223?source=embed_watch_on_loom_cta" frameborder="0"></iframe>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

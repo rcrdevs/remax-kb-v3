@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Portal-Remax-BR.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="#">Imóveis indisponíveis no Portal RE/MAX</a></li>
+              <li><a href="2-Pagina-das-lojas-no-Portal-Remax-Brasil.html">Página das lojas no Portal RE/MAX Brasil</a></li>
+              <li><a href="3-Link-para-area-do-Locador-Locatario-na-Pagina-da-Loja.html">Link para área do Locador/Locatário na Página da Loja</a></li>
+              <li><a href="4-Link-para-Landing-Page.html">Link para Landing Page (LP) na Página da Loja</a></li>
+              <li><a href="5-Criacao-de-um-perfil.html">Criação de um Perfil do Cliente no Portal RE/MAX</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Imóveis indisponíveis no Portal RE/MAX
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>O Corretor(a) Associado de sua franquia realizou o cadastro do imóvel e seu status consta como “Ativo”, mas seu imóvel não está disponível no Portal RE/MAX Brasil? Listamos algumas das possíveis razões para este problema. Verifique se algum caso se enquadra com o seu!</p>
+
+            <ol>
+              <li>Imóvel está esperando aprovação, mas a Agência não possui nenhum <strong> <a href="../5-iList/9-Aprovador-de-imoveis.html"></a> Aprovador de Imóveis </strong>(função optativa). Leia artigo “Aprovador de Imóveis da Loja (Brokers e Staffs)” para mais informações [inserir link quando site estiver pronto];</li><br>
+
+              <li>Informações obrigatórias não foram devidamente preenchidas. Importante destacar que as informações obrigatórias sempre estarão escritas em vermelho;</li><br>
+
+              <li>O Corretor(a) Associado(a) que cadastrou o imóvel também está indicado como Corretor Representante do imóvel. No campo Representação, não há necessidade de inserir o mesmo usuário que está cadastrando este imóvel como Corretor Representante ou Corretor Secundário. O imóvel já estará sob responsabilidade daquele que o criou. Além disso, este campo só é obrigatório para os imóveis que forem cadastrados por Corretores Estagiários. O preenchimento incorreto deste campo pode acarretar problemas no envio do imóvel para o Portal RE/MAX Brasil.</li><br>
+
+              <li>Seu imóvel foi <strong>cancelado, reprovado, vendido ou alugado</strong>. Caso seu imóvel esteja com os status mencionados e você queira que o mesmo retorne à ser anunciado no Portal RE/MAX, será necessário criar uma cópia deste imóvel. O procedimento está descrito em outro artigo desta Base de Conhecimento, com nome de <strong>“Criando uma cópia do imóvel no iList (7)”</strong>. Você pode acessá-lo clicando <a href="../5-iList/15-Criando-uma-copia-do-imovel.html">aqui</a>.</li>
+            </ol>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Google-Workspace.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Drives-compartilhados.html">Drives Compartilhados - Google Workspace</a></li>
+              <li><a href="2-Grupos-Google-Workspaec.html">Grupos - Google Workspace</a></li>
+              <li><a href="3-Gestao-de-usuarios-nos-grupos-de-email.html">Gestão de Usuários nos Grupos de E-mail - Google Workspace</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                FAQ - Google
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Para gerenciar usuários de um grupo, você precisará ser Gerente do mesmo.</p>
+
+            <img src="#" alt="Inserir GIF">
+  
+            <ol>
+              <li>No canto superior direito da tela principal do Google, abra a gaveta de Apps e em seguida procure e selecione “Grupos”. Você também pode acessar diretamente o link: <a href="https://groups.google.com/my-groups">https://groups.google.com/my-groups</a></li>
+  
+              <li>Os gerentes de grupos possuem permissão para realizar a gestão de usuários, como adicionar e remover participantes. para adicionar novos participantes clique no ícone.</li>
+  
+              <li>Será aberta uma tela, basta preencher o campo Participantes do grupo e clicar em Adicionar Participantes.</li>
+  
+              <li>Pronto! Usuário adicionado ao grupo, o mesmo agora receberá mensagens direcionadas à este grupo e poderá enviar mensagens com este remetente.</li>
+            </ol>
+  
+            <p>Abaixo temos alguns vídeos de configurações para melhor te orientar nas configurações do grupo em seu Google Gmail:</p>
+  
+            <li>Cadastrar contas secundárias e enviar e-mails com o remetente das mesmas no Gmail: </li>
+            <iframe src="https://www.loom.com/embed/fc6658a3227b48fca63d3d2722e55a1d" frameborder="0"></iframe>
+  
+            <li>Google Work Space - Adicionar Filtros e Marcadores no Gmail:</li>
+            <iframe src="https://www.loom.com/embed/04a1f85635a242f3bdbbd2883cb34965" frameborder="0"></iframe>
+  
+            <p>Caso não seja, você pode solicitar a gerência de um grupo através de um chamado no Movidesk.</p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>

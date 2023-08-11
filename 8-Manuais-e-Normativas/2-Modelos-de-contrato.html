@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylesfaq-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../imgs/balao-remax.png" alt="" class="logo-img">
+            </a>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Pesquisar...">
+              <button id="searchButton">🔍</button> 
+              <div id="search-results" style="display: none;"></div>
+            </div>
+            <a href="Index-Manuais-e-Normativas.html">
+              <button id="back-to-index" class="back-to-index-btn">
+                <span>Voltar para os artigos</span>
+              </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+          <h2 id="related-articles-title">Artigos relacionados</h2>
+          <button class="dropdown-button"><i class="fas fa-chevron-down"></i></button>
+          <ul id="related-articles-list">
+              <li><a href="1-Guia-de-comissionamento.html">Guia de Comissionamento</a></li>
+              <li><a href="2-Modelos-de-contrato.html">Modelos de Contrato/Distrato de Associação</a></li>
+              <li><a href="3-Lista-de-fornecedores.html">Lista de Fornecedores</a></li>
+              <li><a href="4-Alteracao-de-nome.html">Alteração de nome de franquia</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>
+                Modelos de Contrato/Distrato de Associação
+                <i id="star-icon" class="far fa-star"></i>
+            </h2>
+
+            <p>Observando as seguintes advertências descritas na página 4 do Guia de Comissionamento:</p>
+
+            <p>"Todo corretor RE/MAX deve assinar contrato de associação com a sua agência, utilizando o modelo oficial da rede."</p>
+      
+            <p>"Todo corretor RE/MAX que se desligar da sua agência, deverá assinar a rescisão do seu contrato de associação, utilizando o modelo oficial da rede."</p>
+  
+            <p>Disponibilizamos os modelos de contratos padronizados, de acordo com as normativas da Rede RE/MAX. É importante ressaltar que fica liberada a utilização, caso possua, de ferramenta de assinatura eletrônica - como o parceiro homologado RE/MAX, Clicksign - para realização desta formalização, desde que utilize os modelos padronizados.</p>
+  
+            <p>Anexos</p>
+            <p><a href="Contrato de Associação - Corretor com CRECI (Pessoa Física).pdf">Contrato de Associação - Corretor com CRECI (Pessoa Física)</a></p>
+            <p><a href="Contrato de Associação - Corretor com CRECI (Pessoa Jurídica).pdf">Contrato de Associação - Corretor com CRECI (Pessoa Jurídica)</a></p>
+            <p><a href="Contrato de Associação - Corretor Estagiário.pdf">Contrato de Associação - Corretor Estagiário</a></p>
+  
+            <p><a href="Distrato de Associação de Corretor (Pessoa Física).pdf">Distrato de Associação de Corretor (Pessoa Física)</a></p>
+            <p><a href="Distrato de Associação de Corretor (Pessoa Jurídica).pdf">Distrato de Associação de Corretor (Pessoa Jurídica)</a></p>
+
+            <p class="movidesk-button"><strong>Caso o artigo nao tenha resolvido seu problema, você pode abrir um chamado no Movidesk e um de nossos especialistas vai te ajudar!</strong></p>
+
+            <p class="button-container">
+                <button onclick="redirecionar()">Movidesk</button>
+            </p>
+
+            <div class="feedback-section">
+                <p>Esse artigo foi útil?</p>
+                <div class="feedback-buttons" id="feedback-buttons">
+                  <button id="btn-sim" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-up"></i>
+                    Sim
+                  </button>
+                  <button id="btn-nao" onclick="handleFeedback()">
+                    <i class="fas fa-thumbs-down"></i>
+                    Não
+                  </button>
+                </div>
+                <div id="feedback-message" style="display: none;">
+                  Agradecemos o seu feedback ;)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/script-faq-2.js"></script>
+
+</body>
+</html>
